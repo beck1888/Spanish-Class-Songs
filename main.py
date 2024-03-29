@@ -13,7 +13,7 @@ favicon = Image.open('favicon.png')
 st.set_page_config(page_title="Musica en español", page_icon=favicon)
 
 # Import and apply the custom styling configs
-page_configs = [remove_st_ui, no_anchors, hide_settings, hide_made_with_s]
+page_configs = [remove_st_ui, no_anchors, hide_settings]
 for custom_style in page_configs:
     st.markdown(custom_style, unsafe_allow_html=True)
 
