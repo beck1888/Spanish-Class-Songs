@@ -12,3 +12,11 @@ no_anchors = """""" # Broken right now =(
 hide_settings = """
 <style>div[data-testid="stToolbar"] { display: none;}</style>
 """
+
+# Hides the 'made with streamlit' message when hosting
+hide_made_with_s = """
+            <style>
+            [data-testid="stToolbar"] {visibility: hidden !important;}
+            footer {visibility: hidden !important;}
+            </style>
+            """
